@@ -1,0 +1,28 @@
+
+:root{--coral-sand:#F2E8DF;--creek-blue:#3B8CA8;--palm-green:#2E6E4C;--sunset-gold:#F0B24A;--ink:#0f2b33;--sea:#e7f4f8}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--coral-sand);line-height:1.6}
+a{text-decoration:none;color:var(--creek-blue)}img{max-width:100%;display:block}
+.container{max-width:1180px;margin:0 auto;padding:0 1rem}
+header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:100}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 0}
+.nav-links{display:flex;gap:1rem;align-items:center}
+.nav-links a{padding:.5rem .75rem;border-radius:.5rem;font-weight:600}
+.nav-links a.active,.nav-links a:hover{background:rgba(59,140,168,.1)}
+.hamburger{display:none;flex-direction:column;gap:4px;background:none;border:none}
+.hamburger span{width:24px;height:2px;background:#000}
+@media(max-width:768px){.nav-links{display:none;flex-direction:column;position:absolute;top:60px;left:0;right:0;background:#fff;padding:1rem}.nav-links.open{display:flex}.hamburger{display:flex}}
+.display{font-family:"DM Serif Display",serif;font-size:2.5rem;margin:.5em 0;color:var(--ink)}
+.section-title{font-family:"DM Serif Display",serif;font-size:2rem;margin:.5em 0;color:var(--ink)}
+.section-sub{color:#444;margin-bottom:1rem}
+.hero{padding:3rem 0;background:linear-gradient(180deg,var(--sea),var(--coral-sand))}
+.hero .container{display:grid;gap:2rem;grid-template-columns:1fr 1fr;align-items:center}
+@media(max-width:768px){.hero .container{grid-template-columns:1fr}}
+.btn{display:inline-block;padding:.75rem 1.25rem;border-radius:2rem;font-weight:600;border:1px solid var(--creek-blue);margin:.25rem 0}
+.btn.primary{background:var(--creek-blue);color:#fff}
+.btn.secondary{color:var(--creek-blue)}
+.badge{background:rgba(59,140,168,.1);padding:.3rem .6rem;border-radius:1rem;font-size:.85rem;margin-right:.25rem}
+.grid{display:grid;gap:1rem}.cols-3{grid-template-columns:repeat(3,1fr)}@media(max-width:900px){.cols-3{grid-template-columns:1fr 1fr}}@media(max-width:600px){.cols-3{grid-template-columns:1fr}}
+.room-card{background:#fff;border-radius:1rem;overflow:hidden;border:1px solid #ddd;display:flex;flex-direction:column}
+.room-card img{aspect-ratio:4/3;object-fit:cover}.room-card .body{padding:1rem;flex:1;display:flex;flex-direction:column}
+.room-actions{margin-top:auto;display:flex;gap:.5rem;flex-wrap:wrap}
+footer{background:#0f2b33;color:#fff;padding:1.5rem;margin-top:2rem;text-align:center}
